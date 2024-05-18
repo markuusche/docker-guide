@@ -3,7 +3,7 @@
 - [Running on Docker](https://github.com/markuusche/docker-guide?tab=readme-ov-file#running-on-docker)
 - [Docker Build & Run](https://github.com/markuusche/docker-guide?tab=readme-ov-file#docker-build--run)
 - [Remove | Delete Docker containers & images](https://github.com/markuusche/docker-guide?tab=readme-ov-file#remove-or-delete-docker-containers-or-images)
-- [Logs](https://github.com/markuusche/docker-guide?tab=readme-ov-file#logs)
+- [Logs](https://github.com/markuusche/docker-guide?tab=readme-ov-file#logging)
 
 
 ## Setting Up Dockerfile
@@ -154,9 +154,9 @@ remove all dangling images:
 docker image prune
 ```
 
-## Logs
+## Logging
 
-#### [ Logging ]
+#### [ Shows Logs ]
 shows the logs of the executed script or application using container name in this example `docker-container` \
 this is same as terminal logs.
 ```
@@ -165,4 +165,12 @@ docker logs -f docker-container
 using container id in this example `ac5a630a2df36c4c276e5e5cb`
 ```
 docker logs -f ac5a630a2df36c4c276e5e5cb
+```
+how to log env values?: \
+sampleEnvFile.txt: is where your ENV 'Keys' and 'values' for ex. `var=keys` no need to add ENV prefix \
+docker-image-id: your docker-image-id, you can view it using `docker images` \
+bash: this flag means you run in bash \
+c: this flag means a command. for ex. your command is logging env value. in a normal bash terminal `echo $env` in docker `'echo "$env"'`
+```
+docker run --env-file sampleEnvFile.txt docker-image-id bash -c 'echo "$var"'
 ```
