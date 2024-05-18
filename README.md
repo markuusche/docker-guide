@@ -3,6 +3,7 @@
 - [Running on Docker](https://github.com/markuusche/docker-guide?tab=readme-ov-file#running-on-docker)
 - [Docker Build & Run](https://github.com/markuusche/docker-guide?tab=readme-ov-file#docker-build--run)
 - [Remove | Delete Docker containers & images](https://github.com/markuusche/docker-guide?tab=readme-ov-file#remove-or-delete-docker-containers-or-images)
+- [Logs](https://github.com/markuusche/docker-guide/edit/main/README.md#logs)
 
 
 ## Setting Up Dockerfile
@@ -152,7 +153,16 @@ remove all dangling images:
 ```
 docker image prune
 ```
-remove all unused images (not just dangling ones):
+
+## Logs
+
+#### [ Logging ]
+shows the logs of the executed script or application using container name in this example `docker-container` \
+this is same as terminal logs.
 ```
-docker image prune -a -f 
+docker logs -f docker-container
+```
+using container id in this example `ac5a630a2df36c4c276e5e5cb`
+```
+docker logs -f 5ed709f0df63a33241c727e2093b6f6489de17b
 ```
