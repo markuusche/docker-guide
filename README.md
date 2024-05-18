@@ -117,14 +117,15 @@ docker build -t py-image .
 #### [ Run ]
 runs built project in the docker: \
 -d: means background run.\
+it: means show the container output in real-time.
 --name: name of the container `py-container` as an example. \
 then `py-image` is the name of the Docker image that the container will be based on. 
 ```
-docker run -d --name py-container py-image
+docker run -d -it --name py-container py-image
 ```
 in case if you have environment variables stored in a .txt file:
 ```
-docker run  --env-file env.txt -d --name py-container py-image
+docker run  --env-file env.txt -d -it --name py-container py-image
 ```
 
 ## Remove or Delete docker containers or images
