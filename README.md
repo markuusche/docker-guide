@@ -121,6 +121,10 @@ then `py-image` is the name of the Docker image that the container will be based
 ```
 docker run -d --name py-container py-image
 ```
+in case if you have environment variables stored in a .txt file:
+```
+docker run  --env-file env.txt -d --name py-container py-image
+```
 
 ## Remove or Delete docker containers or images
 
