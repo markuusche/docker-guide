@@ -159,6 +159,11 @@ remove all dangling images:
 ```
 docker image prune
 ```
+force and remove all including dangling images:
+```
+docker image prune -a -f
+```
+
 
 ## Logging
 
