@@ -164,5 +164,5 @@ docker logs -f docker-container
 ```
 using container id in this example `ac5a630a2df36c4c276e5e5cb`
 ```
-docker logs -f 5ed709f0df63a33241c727e2093b6f6489de17b
+docker logs -f ac5a630a2df36c4c276e5e5cb
 ```
