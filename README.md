@@ -3,7 +3,7 @@
 - [Running on Docker](https://github.com/markuusche/docker-guide?tab=readme-ov-file#running-on-docker)
 - [Docker Build & Run](https://github.com/markuusche/docker-guide?tab=readme-ov-file#docker-build--run)
 - [Remove | Delete Docker containers & images](https://github.com/markuusche/docker-guide?tab=readme-ov-file#remove-or-delete-docker-containers-or-images)
-- [Logs](https://github.com/markuusche/docker-guide/edit/main/README.md#logs)
+- [Logs](https://github.com/markuusche/docker-guide?tab=readme-ov-file#logs)
 
 
 ## Setting Up Dockerfile
