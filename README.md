@@ -1,3 +1,10 @@
+## Contents
+- [Setting Up Dockerfile](https://github.com/markuusche/docker-guide/edit/main/README.md#setting-up-dockerfile)
+- [Running on Docker](https://github.com/markuusche/docker-guide/edit/main/README.md#running-on-docker)
+- [Docker Build & Run](https://github.com/markuusche/docker-guide/edit/main/README.md#docker-build--run)
+- [Remove | Delete Docker containers & images](https://github.com/markuusche/docker-guide/edit/main/README.md#remove-or-delete-docker-containers-or-images)
+
+
 ## Setting Up Dockerfile
 
 "Assuming you already have a Dockerfile in your project"
@@ -116,4 +123,33 @@ then `py-image` is the name of the Docker image that the container will be based
 docker run -d --name py-container py-image
 ```
 
+## Remove or Delete docker containers or images
 
+#### [ Container ]
+prune: means delete or remove all docker containers \
+-f: this flag means force. no need for y/N prompt.
+
+```
+docker container prune -f
+```
+rm: means remove (specific container) for ex. `docker-container`
+```
+docker rm docker-container
+```
+
+#### [ Image ]
+prune: means delete or remove all docker containers \
+rmi: means `remove image` (specific) for ex. `docker-image` \
+-f: this flag means force. no need for y/N prompt. \
+-a: this flag means all
+```
+docker rmi docker-image
+```
+remove all dangling images:
+```
+docker image prune
+```
+remove all unused images (not just dangling ones):
+```
+docker image prune -a -f 
+```
