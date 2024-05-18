@@ -117,15 +117,20 @@ docker build -t py-image .
 #### [ Run ]
 runs built project in the docker: \
 -d: means background run.\
-it: means show the container output in real-time.
 --name: name of the container `py-container` as an example. \
 then `py-image` is the name of the Docker image that the container will be based on. 
 ```
-docker run -d -it --name py-container py-image
+docker run -d --name py-container py-image
 ```
-in case if you have environment variables stored in a .txt file:
+in case if you have environment variables stored in a .txt file:\
+it: means show the container output in real-time. (cannot use -d and -it at the same time) it will not log the output
 ```
-docker run --env-file env.txt -d -it --name py-container py-image
+docker run --env-file env.txt -it --name py-container py-image
+```
+if you are having and error like: _the input device is not a TTY.  If you are using mintty, try prefixing the command with 'winpty'_ \
+use winpty prefix like this:
+```
+winpty docker run --env-file env.txt -it --name py-container py-image
 ```
 
 ## Remove or Delete docker containers or images
