@@ -1,8 +1,8 @@
 ## Contents
 - [Setting Up Dockerfile](https://github.com/markuusche/docker-guide?tab=readme-ov-file#setting-up-dockerfile)
-- [Running on Docker](https://github.com/markuusche/docker-guide?tab=readme-ov-file#setting-up-dockerfile)
-- [Docker Build & Run](https://github.com/markuusche/docker-guide?tab=readme-ov-file#setting-up-dockerfile)
-- [Remove | Delete Docker containers & images](https://github.com/markuusche/docker-guide?tab=readme-ov-file#setting-up-dockerfile)
+- [Running on Docker](https://github.com/markuusche/docker-guide?tab=readme-ov-file#running-on-docker)
+- [Docker Build & Run](https://github.com/markuusche/docker-guide?tab=readme-ov-file#docker-build--run)
+- [Remove | Delete Docker containers & images](https://github.com/markuusche/docker-guide?tab=readme-ov-file#remove-or-delete-docker-containers-or-images)
 
 
 ## Setting Up Dockerfile
