@@ -106,8 +106,7 @@ dockers images -a
 
 #### [ Build ]
 builds the project (Dockerfile) to an image: \
--t: means tag, then the tag name \
-in this example tag name is `py-image` \
+-t: means tag, then the tag name. In this example tag name is `py-image` \
 dot (.) at the end of the command means \
 docker will use the files and directories in the current directory (and its subdirectories) \
 as the build context and build an image tagged as `py-image`.
@@ -115,7 +114,7 @@ as the build context and build an image tagged as `py-image`.
 docker build -t py-image .
 ```
 #### [ Run ]
-runs built project in the docker:
+runs built project in the docker: \
 -d: means background run.\
 --name: name of the container `py-container` as an example. \
 then `py-image` is the name of the Docker image that the container will be based on. 
