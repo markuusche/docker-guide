@@ -125,7 +125,7 @@ docker run -d -it --name py-container py-image
 ```
 in case if you have environment variables stored in a .txt file:
 ```
-docker run  --env-file env.txt -d -it --name py-container py-image
+docker run --env-file env.txt -d -it --name py-container py-image
 ```
 
 ## Remove or Delete docker containers or images
