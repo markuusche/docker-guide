@@ -1,3 +1,6 @@
+> [!NOTE]
+> This README contains personal notes and hints intended for future reference. 
+
 ## Contents
 - [Setting Up Dockerfile](https://github.com/markuusche/docker-guide?tab=readme-ov-file#setting-up-dockerfile)
 - [Running on Docker](https://github.com/markuusche/docker-guide?tab=readme-ov-file#running-on-docker)
